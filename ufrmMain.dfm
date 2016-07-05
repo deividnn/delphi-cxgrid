@@ -15,11 +15,13 @@ object frmMain: TfrmMain
   PixelsPerInch = 96
   TextHeight = 13
   object cxGrid1: TcxGrid
-    Left = 24
+    Left = 8
     Top = 80
-    Width = 585
+    Width = 601
     Height = 313
     TabOrder = 0
+    LookAndFeel.NativeStyle = False
+    LookAndFeel.SkinName = 'Blue'
     object cxGrid1DBTableView1: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       DataController.DataSource = dts_cliente
@@ -51,16 +53,29 @@ object frmMain: TfrmMain
     end
   end
   object cxMemo1: TcxMemo
-    Left = 24
+    Left = 8
     Top = 0
     Lines.Strings = (
       'customize>retrive fields;'
       'cxgriddbtable>datacontroller>datasource;'
       'cxgriddbtable>optionscustomize>columnsquickcustomization;'
-      'cxgriddbtable>optionsdata>editing e inserting')
+      'cxgriddbtable>optionsdata>editing e inserting'
+      'cxgrid>lookandfeel>natistyle=false e skinname')
+    Style.LookAndFeel.Kind = lfUltraFlat
+    Style.LookAndFeel.NativeStyle = False
+    Style.LookAndFeel.SkinName = 'Blue'
+    StyleDisabled.LookAndFeel.Kind = lfUltraFlat
+    StyleDisabled.LookAndFeel.NativeStyle = False
+    StyleDisabled.LookAndFeel.SkinName = 'Blue'
+    StyleFocused.LookAndFeel.Kind = lfUltraFlat
+    StyleFocused.LookAndFeel.NativeStyle = False
+    StyleFocused.LookAndFeel.SkinName = 'Blue'
+    StyleHot.LookAndFeel.Kind = lfUltraFlat
+    StyleHot.LookAndFeel.NativeStyle = False
+    StyleHot.LookAndFeel.SkinName = 'Blue'
     TabOrder = 1
     Height = 74
-    Width = 585
+    Width = 598
   end
   object conexao: TSQLConnection
     ConnectionName = 'Devart MySQL Direct'
