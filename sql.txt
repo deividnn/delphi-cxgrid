@@ -1,0 +1,13 @@
+CREATE TABLE `cliente` (
+	`id` INT(11) NOT NULL AUTO_INCREMENT,
+	`id_cidade` INT(11) NULL DEFAULT NULL,
+	`descricao` VARCHAR(50) NULL DEFAULT '0',
+	`idade` INT(11) NULL DEFAULT NULL,
+	`id_produto` INT(11) NULL DEFAULT NULL,
+	INDEX `Index 1` (`id`),
+	INDEX `FK_cliente_produto` (`id_produto`),
+	INDEX `Index 3` (`id_cidade`)
+)
+COLLATE='latin1_swedish_ci'
+ENGINE=InnoDB
+;
